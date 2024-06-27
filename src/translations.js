@@ -21,7 +21,7 @@ const translations = {
     zh: {
       logo: '鬼城',
       welcome: '驯服野兽',
-      homePage: '拯救世界',
+      homePage: '拯救世界!',
       login: '登录',
       username: '用户名',
       password: '密码',
