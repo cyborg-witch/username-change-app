@@ -13,6 +13,7 @@ This app allows users to log in and change their username while supporting multi
 Users can log in with the following credentials:
 
 Username: john
+
 Password: john123
 
 ## Technologies Used
