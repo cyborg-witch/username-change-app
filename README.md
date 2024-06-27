@@ -39,6 +39,7 @@ Password: john123
     npm install
 
 4.  **Start the application**
+
     npm start
 
  Open http://localhost:3000 to view it in your browser.
