@@ -1,0 +1,253 @@
+
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(../src/assets/fonts/BloodyButcher.ttf)format('truetype');
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #000;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 99;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  
+  
+}
+
+.logo a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  color:rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+.language-switcher select {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color:#fff;
+  font-weight: 600;
+}
+.nav-links a {
+  cursor: pointer;
+ 
+}
+.login-icon {
+  width: 30px;
+  
+}
+
+/* Main content styles */
+main {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+ 
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.error {
+  color: red;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 500px;
+  color: white
+}
+.card h1 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.card h2 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+input {
+  margin: 0;
+font-family: inherit;
+font-style: inherit;
+font-size: inherit;
+font-weight: inherit;
+line-height: inherit;
+vertical-align: baseline;
+border: 0;
+border-radius: 0;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+position: relative;
+min-height: 3rem;
+width: 100%;
+padding: 1rem 1.25rem;
+font-size: clamp(1.6rem,calc(1.6rem + .4 * (100vw - 48rem) / 80),2rem);
+font-family: Special Elite,sans-serif;
+background: #ebebdc;
+z-index: 1;
+color: #ebebdc;
+box-shadow: 0 2px 0 -1px hsla(0,0%,100%,.1),0 -2px 0 -1px rgba(0,0,0,.4);
+background: rgba(51,51,51,.65) linear-gradient(0deg,rgba(0,0,0,.2),rgba(0,0,0,.35));
+margin: 20px 0;
+}
+
+label {
+  font-size: 16px;
+  text-transform: uppercase;
+
+}
+
+button {
+  background-color: #36ff0e;
+  border: none;
+  padding: 15px 40px;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+button:hover {
+  box-shadow: 6px 3px 6px 3px rgba(209, 24, 226, 0.55);
+}
+
+/*Home page*/
+
+.hero-container {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: url('assets/images/bg-dragon.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  z-index: -1;
+  animation: mymove 4s linear 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes mymove {
+  0%   { background-size: 100% auto; background-position: bottom right;}
+  50% { background-size: 106% auto; background-position: bottom right;}
+  100% { background-size: 100% auto; background-position: center; }
+
+}
+.hero-container h1 {
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-fill-color:white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  margin: 0;
+}
+.hero-container h3 {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+/*Login page*/
+.login-bg {
+  background-image: url('assets/images/eye.jpg');
+}
+
+
+/*Profile*/
+
+.profile-bg {
+  background-image: url('assets/images/profile-bg.jpg');
+}
+/*Mobile */
+@media(max-width: 1000px){
+  .hero-container {
+    animation: none;
+  }
+  .hero-container h1 {
+    font-size: 2rem;
+  }
+  .hero-container h3 {
+    font-size: 1.4rem;
+  }
+  .card {
+    width: 300px
+  }
+}
