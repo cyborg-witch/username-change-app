@@ -1,16 +1,16 @@
 # Username Change App
 
-This app allows users to log in and change their username while supporting multiple languages (English and Chinese). 
+This app allows users to log in and change their username.
 
 ## Features
 
 - Login with created username and password
 - Users can change their Player name
-- User can switch between English and Chinese languages
+- Users can switch between English and Chinese languages
 
 ## Login
 
-Users can log in with the following credentials:
+Users can log in with these credentials:
 
 Username: john
 
